@@ -1,0 +1,19 @@
+name: Check Pages Availability
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Pages
+        run: sleep 45
+      - name: Check homepage
+        run: |
+          curl -L --fail --silent --show-error --output /tmp/home.html --write-out 'HOMEPAGE_STATUS=%{http_code}\n' https://linederefinery.github.io/LJT-Homepage/
+          grep -o 'Junteng Liu' /tmp/home.html | head -n 1
+      - name: Check publications page
+        run: |
+          curl -L --fail --silent --show-error --output /tmp/publications.html --write-out 'PUBLICATIONS_STATUS=%{http_code}\n' https://linederefinery.github.io/LJT-Homepage/publications/
+          grep -o 'SynLogic' /tmp/publications.html | head -n 1
