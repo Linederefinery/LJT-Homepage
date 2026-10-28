@@ -40,7 +40,7 @@ I am a first-year PhD candidate in the HKUST NLP Group, advised by Prof. Junxian
 5. **C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models.** Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He. NeurIPS, 2023.
 6. **Composing Parameter-Efficient Modules with Arithmetic Operations.** Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He. NeurIPS, 2023.
 
-See the [Publications](/publications/) page for the complete publication list.
+See the [Publications]({{ site.baseurl }}/publications/) page for the complete publication list.
 
 ## Contact Information
 
